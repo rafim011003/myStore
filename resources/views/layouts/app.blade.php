@@ -25,8 +25,14 @@
   <!-- summernote -->
   <link rel="stylesheet" href="{{ url('plugins/summernote/summernote-bs4.css') }}">
   <!-- Google Font: Source Sans Pro -->
-  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet"> 
+    <style>
+      svg.w-5.h-5 {
+        width: 30px;
+      }
+    </style>
 </head>
+
 <body class="hold-transition sidebar-mini layout-fixed">
 <div class="wrapper">
 
@@ -242,103 +248,6 @@
         </div><!-- /.row -->
       </div><!-- /.container-fluid -->
     </div>
-    <!-- <div class="row">
-        <div class="container">
-        <table class="table table-hover">
-  <thead>
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col">Product</th>
-      <th scope="col">Product-Slug</th>
-      <th scope="col">Product Image</th>
-      <th scope="col">Action</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>Kosong</td>
-      <td class="p-2"><button class="btn btn-success">Edit</button>
-        <button class="btn btn-danger">Delete</button></td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>Kosong</td>
-      <td class="p-2"><button class="btn btn-success">Edit</button>
-        <button class="btn btn-danger">Delete</button></td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>Kosong</td>
-      <td class="p-2"><button class="btn btn-success">Edit</button>
-        <button class="btn btn-danger">Delete</button></td>
-    </tr>
-    <tr>
-      <th scope="row">4</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>Kosong</td>
-      <td class="p-2"><button class="btn btn-success">Edit</button>
-        <button class="btn btn-danger">Delete</button></td>
-    </tr>
-    <tr>
-      <th scope="row">5</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>Kosong</td>
-      <td class="p-2"><button class="btn btn-success">Edit</button>
-        <button class="btn btn-danger">Delete</button></td>
-    </tr>
-    <tr>
-      <th scope="row">6</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>Kosong</td>
-      <td class="p-2"><button class="btn btn-success">Edit</button>
-        <button class="btn btn-danger">Delete</button></td>
-    </tr>
-    <tr>
-      <th scope="row">7</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>Kosong</td>
-      <td class="p-2"><button class="btn btn-success">Edit</button>
-        <button class="btn btn-danger">Delete</button></td>
-    </tr>
-    <tr>
-      <th scope="row">8</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>Kosong</td>
-      <td class="p-2"><button class="btn btn-success">Edit</button>
-        <button class="btn btn-danger">Delete</button></td>
-    </tr>
-    <tr>
-      <th scope="row">9</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>Kosong</td>
-      <td class="p-2"><button class="btn btn-success">Edit</button>
-        <button class="btn btn-danger">Delete</button></td>
-    </tr>
-    <tr>
-      <th scope="row">10</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>Kosong</td>
-      <td class="p-2"><button class="btn btn-success">Edit</button>
-        <button class="btn btn-danger">Delete</button></td>
-    </tr>
-  </tbody>
-</table>
-        </div>
-    </div> -->
     <!-- /.content-header -->
 
     <!-- Main content -->

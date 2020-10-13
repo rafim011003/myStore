@@ -13,6 +13,7 @@ class CreateProductsTable extends Migration
      */
     public function up()
     {
+        Schema::dropIfExists('products');
         Schema::create('products', function (Blueprint $table) {
             $table->id();
             $table->string('product_title', 255);
@@ -20,6 +21,7 @@ class CreateProductsTable extends Migration
             $table->string('product_image', 255);
             $table->timestamps();
         });
+
     }
 
     /**

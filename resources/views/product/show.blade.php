@@ -26,20 +26,20 @@
                 </div>
             </div>
             <div class="card-body">
-            <form action="{{ route('product.show', $product->id) }}" method="post">
+            <form action="{{ route('product.show', $product ?? ''->id) }}" method="post">
                 @csrf
                 @method('PUT')
                 <div class="form-group">
                     <label for="#">product_title</label>
-                    <div class="form-control">{{ $product->product_title }}</div>
+                    <div class="form-control">{{ $product ?? ''->product_title }}</div>
                 </div>
                 <div class="form-group">
                     <label for="#">product_slug</label>
-                    <div class="form-control">{{ $product->product_slug }}</div>
+                    <div class="form-control">{{ $product ?? ''->product_slug }}</div>
                 </div>
                 <div class="form-group">
                     <label for="#">product_image</label>
-                    <div class="form-control">{{ $product->product_image }}</div>
+                    <div class="form-control">{{ $product ?? ''->product_image }}</div>
                 </div>
             </form>                    
             </div>

@@ -30,6 +30,10 @@
             <label for="#">Product-Image</label>
             <input type="text" name="product_image" class="form-control" placeholder="Harga Beli" value="{{ $product->product_image }}" autocomplete="off">
           </div>
+          <div class="form-group">
+            <label for="#">Product-Price</label>
+            <input type="text" name="product_price" class="form-control" placeholder="Harga Beli" value="{{ $product->product_price }}" autocomplete="off">
+          </div>
           <button type="submit" class="btn btn-info">Save</button>
         </form>                    
         </div>

@@ -6,13 +6,18 @@
         <p>{{ $message }}</p>
     </div>
     @endif
-
+<div class="card">
+    <div class="card-header">
+        <a href="product/create" class="btn btn-success">
+              Add
+              </a></div>
     <table class="table table-hover ">
       <tr class="bg-light">
         <th class="text-center">NO</th>
         <th class="text-center">Product-Title</th>
         <th class="text-center">Product-Slug</th>
         <th class="text-center">Product-Image</th>
+        <th class="text-center">Product-Price</th>
         <th width="280px" class="text-md-center">Action</th>
       </tr>
       @forelse ($product as $pr)
@@ -21,15 +26,16 @@
           <td class="text-md-center">{{ $pr->product_title }}</td>
           <td class="text-md-center">{{ $pr->product_slug }}</td> 
           <td class="text-md-center">{{ $pr->product_image }}</td>
+          <td class="text-md-center">{{ $pr->product_price }}</td>
           <td class="text-md-center">
             <form action="{{ route('product.destroy', $pr->id) }}" method="post">
               @csrf
               @method('DELETE')
-              <a href="{{ route('product.show', $pr->id) }}" class="btn btn-primary">
+              <a href="{{ route('product.show', $pr->product_slug) }}" class="btn btn-light border-dark">
               Detail
-              </a>
-              <a href="{{ route('product.edit', $pr->id) }}" class="btn btn-info">
-              EDIT
+              </a>  
+              <a href="{{ route('product.edit', $pr->product_slug) }}" class="btn btn-info">
+              Edit
               </a>
               <button type="submit" class="btn btn-danger">
               Delete
@@ -43,4 +49,6 @@
         </tr>
       @endforelse
     </table>
+    {{ $product->links() }}
+    </div>
 @endsection
