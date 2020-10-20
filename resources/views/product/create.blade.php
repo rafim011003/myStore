@@ -22,6 +22,10 @@
               <input type="text" name="product_title" class="form-control" placeholder="Nama Product" autocomplete="off">
             </div>
             <div class="form-group">
+              <label for="#">Product-Slug</label>
+              <input type="text" name="product_slug" class="form-control" placeholder="Slug" autocomplete="off">
+            </div>
+            <div class="form-group">
               <label for="#">Product-Image</label>
               <input type="text" name="product_image" class="form-control" placeholder="Gambar" autocomplete="off">
             </div>

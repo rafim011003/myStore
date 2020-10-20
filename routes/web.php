@@ -20,6 +20,12 @@ Route::get('/', function () {
 
 Route::get('product/{slug}', $url . '\ProductController@showProduct');
 Route::resource('product', $url . '\ProductController');
+Route::get('product/export/xlsx', $url . '\ProductController@exportXL');
+Route::get('product/export/csv', $url . '\ProductController@exportCSV');
+Route::get('product/export/pdf', $url . '\ProductController@exportPDF');
+// Import
+Route::get('upload', $url . '\ProductController@upload');
+Route::post('product/upload/data', $url . '\ProductController@uploadData');
 // Route::get('product/edit/{product_slug}' , $url. '\ProductController@edit');
 // Route::post('product/edit',$url. '\ProductController@edit');
 // Route::get('product/show', $url . '\ProductController@show');

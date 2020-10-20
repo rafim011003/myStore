@@ -8,11 +8,35 @@
     @endif
 <div class="card">
     <div class="card-header">
-        <a href="product/create" class="btn btn-success">
-              Add
-              </a></div>
+      <div class="row">
+      <a href="product/create" class="btn btn-success mr-2">
+              Add 
+              </a>
+        <a href="upload" class="btn btn-info mr-2">
+              Input File
+              </a>
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle float-right" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Export
+          </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                <a href="product/export/xlsx" class="btn btn-warning dropdown-item">
+                    Export Excel
+                  </a>
+                <a href="product/export/csv" class="btn btn-dark dropdown-item">
+                    Export CSV
+                  </a>
+                <a href="product/export/pdf" class="btn btn-info dropdown-item">
+                    Export PDF
+              </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card">
     <table class="table table-hover ">
-      <tr class="bg-light">
+      <tr class="bg-dark">
         <th class="text-center">NO</th>
         <th class="text-center">Product-Title</th>
         <th class="text-center">Product-Slug</th>
@@ -51,4 +75,23 @@
     </table>
     {{ $product->links() }}
     </div>
+    </div>
 @endsection
+
+<!-- <div class="dropdown float-right">
+        <a href="product/create" class="btn btn-success">
+              Add 
+              </a>
+        <a href="upload" class="btn btn-success">
+              Input File
+              </a>
+        <a href="product/export/xlsx" class="btn btn-warning float-right ml-2">
+              Export Excel
+              </a>
+        <a href="product/export/csv" class="btn btn-dark float-right ml-2">
+              Export CSV
+              </a>
+        <a href="product/export/pdf" class="btn btn-info float-right">
+              Export PDF
+              </a>
+              </div> -->
